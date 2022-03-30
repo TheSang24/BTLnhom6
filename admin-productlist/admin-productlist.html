@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <!--Admin-product-list.css-->
+    <link rel="stylesheet" href="admin-product-list.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ADMIN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link nav-link-product" aria-current="page" href="#">Sản Phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../admin-order-list/admin-order-list.html">Đơn Đặt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Trangchu.html">Trang Khách Hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../admin-login/admin-login.html">Đăng Xuất</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Title-->
+    <div class="container mt-5">
+        <h1 class="display-3" style="text-align: center; ">Danh Mục Quản Lý Thông Tin Sản Phẩm</h1>
+    </div>
+    <!--Table-->
+    <div class="container mt-5">
+        <table class="table table-hover" >
+            <thead class="tableHead">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Tên Sản Phẩm</th>
+                <th scope="col">Mã Sản Phẩm</th>
+                <th scope="col">Lần Cập Nhật Cuối</th>
+              </tr>
+            </thead>
+            <tbody>
+                <!--1-->
+              <tr class="tableRow">
+                <th scope="row" >1</th>
+                <td>iPhone 13</td>
+                <td>ip13-tgdd</td>
+                <td>5 giờ trước</td>
+              </tr>
+              <!--2-->
+              <tr class="tableRow">
+                <th scope="row">2</th>
+                <td>Samsung Galaxy Note 9</td>
+                <td>ssgn9-tgdd</td>
+                <td>2 phút trước</td>
+              </tr>
+              <!--3-->
+              <tr class="tableRow">
+                <th scope="row">3</th>
+                <td>iPhone 12</td>
+                <td>ip12-tgdd</td>
+                <td>2 ngày trước</td>
+              </tr>
+              <!--4-->
+              <tr class="tableRow">
+                <th scope="row">4</th>
+                <td>iPad Air 4</td>
+                <td>ipadA4-tgdd</td>
+                <td>1 tuần trước</td>
+              </tr>
+              <!--5-->
+              <tr class="tableRow">
+                <th scope="row">5</th>
+                <td>iPad 2</td>
+                <td>ipad2-tgdd</td>
+                <td>6 tuần trước</td>
+              </tr>
+              <!--6-->
+              <tr class="tableRow">
+                <th scope="row">6</th>
+                <td>iPad Air 3</td>
+                <td>ipadA3-tgdd</td>
+                <td>2 tuần trước</td>
+              </tr>
+              <!--7-->
+              <tr class="tableRow">
+                <th scope="row">7</th>
+                <td>Oppo A1k</td>
+                <td>oppA1K-tgdd</td>
+                <td>1 tháng trước</td>
+              </tr>
+              <!--8-->
+              <tr class="tableRow">
+                <th scope="row">8</th>
+                <td>HuaWei S38</td>
+                <td>Hws38-tgdd</td>
+                <td>1 tuần trước</td>
+              </tr>
+              <!--9-->
+              <tr class="tableRow">
+                <th scope="row">9</th>
+                <td>Sạc dự phòng Energizer S700</td>
+                <td>enchaS700-tgdd</td>
+                <td>3 phút trước</td>
+              </tr>
+              <!--10-->
+              <tr class="tableRow">
+                <th scope="row">10</th>
+                <td>Cáp USB cổng typeC Media</td>
+                <td>USBmediaC-tgdd</td>
+                <td>1 giờ trước</td>
+              </tr>
+              <!--11-->
+              <tr class="tableRow">
+                <th scope="row">11</th>
+                <td>Cáp USB cổng typeA Media</td>
+                <td>USBmediaA-tgdd</td>
+                <td>2 giờ trước</td>
+              </tr>
+              <!--12-->
+              <tr class="tableRow">
+                <th scope="row">12</th>
+                <td>Bộ chuyển đổi đầu typeC sang typeA MasterE</td>
+                <td>masterECA-tgdd</td>
+                <td>3 giờ trước</td>
+              </tr>
+              <!--hidden rows-->
+              <!--13-->
+              <tr class="tableRow1">
+                <th scope="row">13</th>
+                <td>Bộ sạc pin iPhone</td>
+                <td>chargerIP-tgdd</td>
+                <td>3 giờ trước</td>
+              </tr>
+              <!--14-->
+              <tr class="tableRow1">
+                <th scope="row">14</th>
+                <td>Sạc dự phòng Media</td>
+                <td>portChagmedia-tgdd</td>
+                <td>5 giờ trước</td>
+              </tr>
+              <!--15-->
+              <tr class="tableRow1">
+                <th scope="row">15</th>
+                <td>Tai nghe iPhone</td>
+                <td>earPhoneIP-tgdd</td>
+                <td>2 giờ trước</td>
+              </tr>
+              <!--16-->
+              <tr class="tableRow1">
+                <th scope="row">16</th>
+                <td>Đồng Hồ Thông Minh Samsung</td>
+                <td>smWatchSS-tgdd</td>
+                <td>9 giờ trước</td>
+              </tr>
+              <!--17-->
+              <tr class="tableRow1">
+                <th scope="row">17</th>
+                <td>Miếng Dán Cường Lực</td>
+                <td>proScreen-tgdd</td>
+                <td>4 giờ trước</td>
+              </tr>
+              <!--18-->
+              <tr class="tableRow1">
+                <th scope="row">18</th>
+                <td>Sách điện tử Ebook</td>
+                <td>eBook-tgdd</td>
+                <td>3 giờ trước</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mb-5" style="text-align: center;">
+          <button type="button" id="seeMoreBTN" class="btn btn-secondary">Xem thêm sản phẩm</button>
+        </div>
+    </div>
+    <!--js-->
+    <script src="admin-product-list.js"></script>
+    <!--bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

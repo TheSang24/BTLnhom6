@@ -112,19 +112,15 @@ body{
 } */
 
 
-/* ClearFix:Start */
+/* Boxsort:Start */
 .box-sort{
     margin: 10px 0;
     display: block;
     overflow: visible;
     height: 0;
-    width: 80%;
 }
 
 .sort-total{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
     float: left;
     font-weight: bold;
     margin: 0 0 15px;
@@ -242,8 +238,18 @@ body{
     right: 0;
     width: 0;
 }
+/* Boxsort:End */
 
-/* ClearFix:End */
+/* ClearFix:start */
+.clear-fix{
+    display: block;
+}
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Clearfix:end */
 
 /* ProductGallery:Start */
 .product-gallery-one{
