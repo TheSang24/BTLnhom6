@@ -118,6 +118,7 @@ body{
     display: block;
     overflow: visible;
     height: 0;
+    width: 80%;
 }
 
 .sort-total{
@@ -208,7 +209,38 @@ body{
     line-height: 16px;
     color: #000000;
     margin: auto;
-    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.sort-select{
+    float: right;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.sort-select .click-sort{
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 10px 6px 8px;
+}
+
+.sort-select .sort-show{
+    padding-right: 12px;
+    position: relative;
+}
+
+.sort-select .sort-show::before{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #333;
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 0;
 }
 
 /* ClearFix:End */
