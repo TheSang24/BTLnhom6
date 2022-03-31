@@ -469,7 +469,7 @@ nav ul li:nth-child(9):hover a{
 }
 .product-gallery-one-content-product-item {
     width: 20%;  
-    padding: 50px 12px 12px; 
+    padding: 10px 15px 20px; 
     border: 1px solid #fff;
     cursor: pointer;
     border-color: rgb(231, 229, 229);   
@@ -526,6 +526,26 @@ nav ul li:nth-child(9):hover a{
 .product-gallery-one-content-product-item:hover img {
     transition: all 0.5s  ease;
     transform: translateY(-20px);
+}
+
+.item-label{
+    height: 40px;
+    width:  75px;
+    padding-top: 0px;
+}
+.tragop{
+    height: 18px;
+    width: 64px;
+    background-color: #f1f1f1;
+    color: #333;
+}
+.item-label span{
+    border-radius: 2px;
+    font-size: 11px;
+    line-height: 12px;
+    display: inline-block;
+    margin-right: 4px;
+   
 }
 
 
