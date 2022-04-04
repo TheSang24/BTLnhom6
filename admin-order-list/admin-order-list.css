@@ -1,0 +1,29 @@
+.tableRow:hover{
+    cursor:pointer;
+}
+.tableHead{
+    background-color: rgba(91, 255, 118, 0.404);
+}
+.tableRow{
+    background-color: rgba(250, 207, 243, 0.404);
+}
+
+html, body{
+    background-image: url("../admin-product-list/img/bgpl.jpg");
+}
+
+.navbar{
+    background-color: rgba(20, 220, 30, 0.384);
+}
+
+.nav-link-order{
+    background-color: rgba(255, 0, 212, 0.301);
+    border:solid;
+}
+
+
+.tableRow1{
+    background-color: rgba(55, 91, 209, 0.404);
+    visibility: hidden;
+    display:none;
+}
