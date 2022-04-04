@@ -41,30 +41,29 @@ body{
 .slider-banner img{
     position: relative;
 }
-/* 
-.prev, .next {
-    cursor: pointer;
+.slider-content-left-top-btn {
     position: absolute;
-    bottom: 36px;
-    width: 30px;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.slider-content-left-top-btn i{
+    color: #333;
+    font-size: 33px;
     height: 50%;
-    margin: 5px;
-    background-color: rgba(255,97,71,0);
-    color: yellowgreen;
-    font-weight: bold;
-    font-size: 40px;
-    transition: all 0s ease 0s;
-    user-select: none;
-    text-align: center;
-} */
-/* .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  } */
- /* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
-/* .prev:hover, .next:hover {
-    background-color: rgb(235, 231, 231);
-} */
+    width: 25px;
+    background-color: rgb(245, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%);
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
 .promote-banner{
     height: 205px;
     width: 400px;
@@ -85,31 +84,162 @@ body{
 /* Banner:End */
 
 /* ScrollBox:Start */
-/* #scroll-box{
-    height: 202px;
-    width: 1366px;
+.top-box{
+    position: relative;
+    font-size: 0;
     padding-top: 10px;
-    background-color: darkolivegreen;
 }
-#scroll-box section{
-    display: block;
+.top-box section{
+    max-width: 1200px;
     width: 100%;
-    height: 192px;
+    min-width: 980px;
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+.block-scroll{
+    position: relative;
+    font-size: 0;
+    padding-top: 10px;
+    width: 1200px;
+    height: 55px;
+    padding: 10px 0 0 0;
+    position: sticky;
+}
+.scroll-btn{
+    position: absolute;
+    width: 1200px;
+    z-index: 10;
+    display: none;
+}
+.scroll-btn .btn-right-scroll{
+    position: absolute;
+    right: 0;
+    display: none;
+} 
+.filter-total{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 5px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.filter-item-title{
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 10px;
+    display: inline-block;
+}
+.filter-total i{
+    margin-right: 5px;
+}
+.icon-filter{
+    background-position: -285px 0;
+    height: 14px;
+    width: 11px;
+}
+[class^="icon-"], [class*="icon-"]{
+    background-image: url(https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/TGDD/Desktop/icon_common.22122021@2x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 200px;
+}
+.filter-item{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 8px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.filter-item-title span{
+    padding-right: 12px;
     position: relative;
 }
-
-.filter-box{
-    height: 55px;
-    width: 1200px;
-    padding-top: 10px;
-    background-color: white;
+.filter-item-title span::before{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #333;
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 0
+}
+.filter-show{
+    width: 547px;
+}
+.filter-list{
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    margin: 0 -4px;
+    max-height: 23vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.filter-list .c-btnbox{
+    height: 36px;
+    margin: 0 4px 10px;
+    padding: 0;
+    width: 99px;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #333;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    line-height: 17px;
+}
+.c-btnbox img{
+    display: flex;
+    width: auto;
+    max-height: 25px;
+    max-width: 98%;
+    object-fit: contain;
+    justify-content: center;
+    border: 0;
+}
+.box-quicklink{
+    display: flex;
+    flex-wrap: wrap;
+}
+.quick-filter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-quicklink-item{
+    border-radius: 52px;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    color: #333;
+    display: flex;
+    font-size: 14px;
+    line-height: 13px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    min-height: 36px;
+    max-height: 36px;
+    padding: 6px 13px;
+    vertical-align: top;
+}
+.box-quicklink-item img{
+    margin-right: 0;
+    border: 0;
+    vertical-align: middle;
+    width: auto;
+    height: 20px;
 }
 
-.filter-item a{
-    display: inline;
-    position: sticky;
-    position: -webkit-sticky;
-} */
+/* ScrollBox:End */
 
 
 /* Boxsort:Start */
@@ -118,27 +248,34 @@ body{
     display: block;
     overflow: visible;
     height: 0;
+    position: relative;
 }
 
 .sort-total{
+    margin-left: 72px;
     float: left;
     font-weight: bold;
-    margin: 0 0 15px;
+    /* margin: 0 0 15px; */
     padding-top: 3px;
 }
 
 .sort-total p{
-    height: 21px;
-    width: 94px;
     margin: 0 0 15px 0;
     padding: 3px;
     color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 70px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    text-rendering: geometricPrecision;
 }
 
 .box-checkbox{
     height: 28px;
     width: 524px;
-    margin-left: 15px;
     float: left;
     display: flex;
 }
@@ -178,6 +315,7 @@ body{
     text-transform: uppercase;
     font-style: italic;
     display: flex;
+    width: 120px;
 }
 
 .check-item{
@@ -200,17 +338,20 @@ body{
 
 .check-item p{
     height: 16px;
-    width: 45px;
+    width: 77px;
     font-size: 12px;
     line-height: 16px;
     color: #000000;
     margin: auto;
+    display: inline-block;
 }
 
 .sort-select{
     float: right;
     position: relative;
     margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 72px;
 }
 
 .sort-select .click-sort{
@@ -243,6 +384,8 @@ body{
 /* ClearFix:start */
 .clear-fix{
     display: block;
+    width: 1024px;
+    height: 42px;
 }
 .clear-fix::after{
     content: "";
@@ -403,4 +546,212 @@ body{
     transform: translateY(-20px);
 }
 /* ProductGallery:End */
+
+/* Footer:start */
+.footer{
+    width: 100%;
+    height: 301px;
+    margin: 0 auto;
+    clear: both;
+    border-top: 1px solid #e2e2e2;
+    background: #fff;
+}
+.section{
+    max-width: 1200px;
+    width: 100%;
+    min-width: 980px;
+    position: relative;
+    height: 297px;
+}
+.footer .footer-top{
+    height: 234px;
+    padding: 15px 0 5px;
+    margin: 0 50px 0 50px;
+    width: 1200px;
+    padding-top: 5px;
+}
+.footer .clearfix{
+    display: block;
+}
+.footer-col{
+    float: left;
+    width: 24%;
+}
+.f-listmenu{
+    width: 100%;
+    display: block;
+    list-style: none;
+    list-style-type: none;
+    list-style-position: outside;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.f-listmenu li{
+    margin-bottom: 10px;
+}
+.f-listmenu li a{
+    color: #333;
+    line-height: 21px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+}
+/* .f-listmenu li .hidden{
+    display: none;
+} */
+.f-listmenu li .arrow::before{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -15px
+}
+.f-listtel{
+    display: block;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+.f-listtel p{
+    text-rendering: geometricPrecision;
+    display: block;
+}
+.f-listtel .content{
+    line-height: 21px;
+    margin-top: 10px;
+}
+.f-listtel .content>span{
+    width: 70px;
+    display: inline-flexbox;
+    height: 21px;
+}
+.f-listtel .content a{
+    color: #2f80ed;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+}
+.f-social{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.f-social a{
+    color: #2f80ed;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.f-social a i{
+    margin-right: 5px;
+    font-style: italic;
+    transition: .2s;
+}
+.f-social a .link-fb{
+    margin: 0 10px 0 0;
+    width: 100px;
+    height: 16px;
+}
+.icon-facebook{
+    background-position: -225px 0;
+    height: 18px;
+    width: 18px;
+    margin-right: 15px;
+}
+.icon-facebook text{
+    display: inline-flex;
+    margin-block: 10px;
+}
+
+[class^="icon-"],[class*="icon-"]{
+    background-image: url(https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/TGDD/Desktop/icon_common.22122021@2x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 200px;
+}
+.link-ytb{
+    margin: 0 10px 0 50px;
+    width: 112px;
+    height: 16px;
+}
+.icon-youtube{
+    background-position: -200px 0;
+    height: 18px;
+    width: 18px; 
+}
+.icon-youtube text{
+
+}
+.f-certify{
+    margin-bottom: 20px;
+}
+.f-certify a{
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.icon-congthuong{
+    background-position: -200px -30px;
+    height: 24px;
+    width: 79px;
+}
+.icon-khieunai{
+    background-position: -250px 0;
+    height: 25px;
+    width: 25px;
+}
+.icon-protected{
+    background-position: -80px -60px;
+    height: 24px;
+    width: 122px;
+}
+._ncsc img{
+    width: 85px;
+    border: 0;
+}
+.footer-logo{
+    background-color: #fff;
+}
+.footer-logo-hd{
+    color: #222;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.copyright{
+    background-color: #f1f1f1;
+    padding: 15px 0;
+    height: 66px;
+
+}
+.copyright section{
+    max-width: 1200px;
+    width: 100%;
+    min-width: 980px;
+    position: relative;
+    display: block;
+    padding: 0;
+}
+.copyright p{
+    color: #666;
+    width: 1200px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 18px;
+    display: inline-block;
+    padding-left: 75px;
+}
+.copyright a{
+    color: #288ad6;
+}
 
