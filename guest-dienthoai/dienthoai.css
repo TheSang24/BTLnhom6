@@ -446,19 +446,19 @@ body{
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-
-.prod-group li{
+.prod-group>li{
     padding: 5px 8px ;
     border: 1px solid #e0e0e0 ;
     border-radius: 2px;
-    color: #333;
-    display: flex ;
+    display: inline-flex;
     font-size: 12px;
     line-height: 16px;
     margin-bottom: 5px;
-    margin-right: 4px
+    margin-right: 4px;
 }
-
+.prod-group>li text{
+    color: #333;
+}
 .prod-group li:hover{
     border-color: #2f80ed !important;
     color: #2f80ed !important;
@@ -493,6 +493,34 @@ body{
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
+}
+.product-gallery-one-content-product-item-text .result-label{
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0;
+    overflow: hidden;
+    max-width: 100%;
+    padding-right: 8px;
+    background: linear-gradient(to right,#ef3006,#c60004);
+    max-height: 25px;
+}
+.result-label img{
+    float: left;
+    max-width: 20px;
+}
+.result-label span{
+    color: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+    line-height: 13px;
+    margin-left: 3px;
+    overflow: hidden;
+    padding: 4px 0 0 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp: 2;
+    text-transform: uppercase;
 }
 
 .product-gallery-one {
@@ -534,6 +562,40 @@ body{
 .product-gallery-one-content-product-item:hover img {
     transition: all 0.5s  ease;
     transform: translateY(-20px);
+}
+.view-more{
+    display: block;
+    clear: both;
+    width: 100%;
+}
+.view-more a{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    border-radius: 4px;
+    margin: 10px auto;
+    width: 340px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+.view-more a::after{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    content: '';
+    position: relative;
+    right: -5px;
+    top: 11px;
+}
+.view-more span{
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
 }
 /* ProductGallery:End */
 
