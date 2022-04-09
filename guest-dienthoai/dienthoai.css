@@ -97,14 +97,16 @@ body{
     margin: auto;
     padding: 0;
 }
+.scrolling-inner{
+    position: sticky;
+    top: 0;
+}
 .block-scroll{
     position: relative;
     font-size: 0;
     padding-top: 10px;
-    width: 1200px;
+    width: 100%;
     height: 55px;
-    padding: 10px 0 0 0;
-    position: sticky;
 }
 .scroll-btn{
     position: absolute;
@@ -117,7 +119,7 @@ body{
     right: 0;
     display: none;
 } 
-.filter-total{
+.filter-total, .filter-item{
     display: inline-block;
     font-size: 14px;
     line-height: 17px;
@@ -148,14 +150,6 @@ body{
     line-height: 30px;
     vertical-align: middle;
     background-size: 300px 200px;
-}
-.filter-item{
-    display: inline-block;
-    font-size: 14px;
-    line-height: 17px;
-    margin-right: 8px;
-    position: relative;
-    padding-bottom: 10px;
 }
 .filter-item-title span{
     padding-right: 12px;
@@ -230,6 +224,7 @@ body{
     max-height: 36px;
     padding: 6px 13px;
     vertical-align: top;
+    transition: .2s;
 }
 .box-quicklink-item img{
     margin-right: 0;
@@ -255,7 +250,6 @@ body{
     margin-left: 72px;
     float: left;
     font-weight: bold;
-    /* margin: 0 0 15px; */
     padding-top: 3px;
 }
 
@@ -266,11 +260,7 @@ body{
     font-size: 14px;
     font-weight: 700;
     margin-left: 70px;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    text-rendering: geometricPrecision;
+
 }
 
 .box-checkbox{
@@ -469,10 +459,10 @@ body{
     margin-right: 4px
 }
 
-/* .prod-group li:hover{
+.prod-group li:hover{
     border-color: #2f80ed !important;
     color: #2f80ed !important;
-} */
+}
 
 .product-gallery-one-content-product-item-text li{
     margin-bottom: 6px;
