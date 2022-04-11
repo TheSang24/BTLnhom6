@@ -384,7 +384,166 @@ nav ul li:nth-child(9):hover a{
 .submenu {
     z-index: 10;
 }
-/* ------------------------tablet------------ */
+
+/* ScrollBox:start */
+.top-box{
+    position: relative;
+    font-size: 0;
+    padding-top: 10px;
+}
+.top-box section{
+    max-width: 1200px;
+    width: 100%;
+    min-width: 980px;
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+.scrolling-inner{
+    position: sticky;
+    top: 0;
+}
+.block-scroll{
+    position: relative;
+    font-size: 0;
+    padding-top: 10px;
+    width: 100%;
+    height: 55px;
+}
+.scroll-btn{
+    position: absolute;
+    width: 1200px;
+    z-index: 10;
+    display: none;
+}
+.scroll-btn .btn-right-scroll{
+    position: absolute;
+    right: 0;
+    display: none;
+} 
+.filter-total, .filter-item{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 5px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.filter-item-title{
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 10px;
+    display: inline-block;
+}
+.filter-total i{
+    margin-right: 5px;
+}
+.icon-filter{
+    background-position: -285px 0;
+    height: 14px;
+    width: 11px;
+}
+[class^="icon-"], [class*="icon-"]{
+    background-image: url(https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/TGDD/Desktop/icon_common.22122021@2x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 200px;
+}
+.filter-item-title span{
+    padding-right: 12px;
+    position: relative;
+}
+.filter-item-title span::before{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #333;
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 0
+}
+.filter-show{
+    width: 547px;
+}
+.filter-list{
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    margin: 0 -4px;
+    max-height: 23vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.filter-list .c-btnbox{
+    height: 36px;
+    margin: 0 4px 10px;
+    padding: 0;
+    width: 99px;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #333;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    line-height: 17px;
+}
+.c-btnbox img{
+    display: flex;
+    width: auto;
+    max-height: 25px;
+    max-width: 98%;
+    object-fit: contain;
+    justify-content: center;
+    border: 0;
+}
+.box-quicklink{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lst-quicklink{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.quick-link-title{
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.box-quicklink-item{
+    border-radius: 52px;
+    color: #333;
+    display: flex;
+    font-size: 14px;
+    line-height: 13px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    min-height: 36px;
+    max-height: 36px;
+    padding: 6px 13px;
+    vertical-align: top;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    text-decoration: none;
+}
+.box-quicklink-item img{
+    vertical-align: middle;
+    width: auto;
+    height: 20px;
+    margin-right: 0;
+}
+/* ScrollBox:end */
+
+/* Tablet */
 .product-gallery-one-content-product {
     display: flex;
     justify-content: space-between;
@@ -423,28 +582,6 @@ nav ul li:nth-child(9):hover a{
 .product-gallery-one {
     margin-top: 30px;
 }
-.product-gallery-one-content-title {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.product-gallery-one-content-title ul li a{
-    color: #333;
-    font-size: 12px;
-    transform: all 0.3s ease;
-}
-.product-gallery-one-content-title ul{
-    display: flex;
-}
-.product-gallery-one-content-title ul li {
-    padding: 6px 12px;
-    border: 1px solid #ddd;
-    margin-left: 12px;
-    border-radius: 40px;
-}
-.product-gallery-one-content-title ul li:hover a {
-    color: #6286CC;
-}
 .product-gallery-one-content-product-item:hover {
     transition: all 0.5s  ease;
     transform: translateY(-1px);
@@ -452,6 +589,40 @@ nav ul li:nth-child(9):hover a{
 .product-gallery-one-content-product-item:hover img {
     transition: all 0.5s  ease;
     transform: translateY(-20px);
+}
+.view-more{
+    display: block;
+    clear: both;
+    width: 100%;
+}
+.view-more a{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    border-radius: 4px;
+    margin: 10px auto;
+    width: 340px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+.view-more a::after{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    content: '';
+    position: relative;
+    right: -5px;
+    top: 11px;
+}
+.view-more span{
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
 }
 /* ProductGallery:End */
 
